@@ -1,0 +1,88 @@
+{
+	"w": 512,
+	"h": 512,
+	"scale": 0,
+	"text": "LW\n",
+	"bg": {
+		"color": "#ffffff",
+		"opacity": 1,
+		"gradient": {
+			"begin": {
+				"x": 0,
+				"y": 0
+			},
+			"end": {
+				"x": 1,
+				"y": 1
+			},
+			"colors": [
+				{
+					"color": "#fdf9ed",
+					"pos": 0.5
+				},
+				{
+					"color": "#f32343",
+					"pos": 0.5
+				}
+			]
+		}
+	},
+	"fontsize": 250,
+	"lineheight": 1,
+	"letterspace": 0,
+	"linejoin": "round",
+	"x": 0.47,
+	"y": 0.62,
+	"align": "center",
+	"rotate": 0,
+	"axisangle": 0,
+	"axisrotate": 0,
+	"fontfamily": "BonjourMonAmiRUS",
+	"fontstyle": "normal",
+	"prevtext": "",
+	"letters_cache": {},
+	"letters": [],
+	"letterssorted": [],
+	"letterstyles": [
+		{
+			"layers": [
+				null
+			]
+		}
+	],
+	"layers": [
+		{
+			"name": "Основа",
+			"fontfill": {
+				"color": "#07051a",
+				"opacity": 1
+			},
+			"fontstroke": {
+				"color": "#fefde8",
+				"size": 20
+			},
+			"n": 18,
+			"move": 0,
+			"step": 1
+		},
+		{
+			"name": "Контур",
+			"fontfill": {
+				"color": "#07051a",
+				"opacity": 0
+			},
+			"fontstroke": {
+				"color": "#070419",
+				"size": 40
+			},
+			"n": 35,
+			"move": 0,
+			"step": 1
+		}
+	],
+	"needUpdatePositions": true,
+	"layersDirection": {
+		"x": -0.06975647374412533,
+		"y": 0.9975640502598242
+	}
+}
