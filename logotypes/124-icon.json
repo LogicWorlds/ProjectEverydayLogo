@@ -1,0 +1,166 @@
+{
+	"w": 512,
+	"h": 512,
+	"scale": 0,
+	"text": "LW",
+	"bg": {
+		"color": "#2eedb6",
+		"opacity": 1
+	},
+	"fontsize": 270,
+	"lineheight": 1,
+	"letterspace": 0,
+	"linejoin": "round",
+	"x": 0.5,
+	"y": 0.72,
+	"align": "center",
+	"rotate": 0,
+	"axisangle": 0,
+	"axisrotate": 0,
+	"fontfamily": "Nickname",
+	"fontstyle": "normal",
+	"prevtext": "",
+	"letters_cache": {},
+	"letters": [],
+	"letterssorted": [],
+	"letterstyles": [
+		{
+			"layers": [],
+			"direction": {
+				"x": 0.29237170472273677,
+				"y": -0.9563047559630354
+			}
+		},
+		{
+			"direction": {
+				"x": 0.017452406437283376,
+				"y": -0.9998476951563913
+			}
+		}
+	],
+	"layers": [
+		{
+			"name": "Основа",
+			"fontfill": {
+				"color": "#000000",
+				"opacity": 1,
+				"gradient": {
+					"begin": {
+						"x": 0,
+						"y": 0
+					},
+					"end": {
+						"x": 0,
+						"y": -0.7
+					},
+					"colors": [
+						{
+							"color": "#8c66d3",
+							"pos": 0.01
+						},
+						{
+							"color": "#33aaec",
+							"pos": 0.3
+						},
+						{
+							"color": "#44e4fa",
+							"pos": 0.6
+						}
+					]
+				}
+			},
+			"fontstroke": {
+				"color": "#000000",
+				"size": 10,
+				"gradient": {
+					"begin": {
+						"x": 0,
+						"y": 0
+					},
+					"end": {
+						"x": 0.5,
+						"y": -1
+					},
+					"colors": [
+						{
+							"color": "#9dfaff",
+							"pos": 0
+						},
+						{
+							"color": "#e8feff",
+							"pos": 0.3
+						},
+						{
+							"color": "#9dfaff",
+							"pos": 0.5
+						}
+					]
+				}
+			},
+			"n": 1,
+			"move": 0,
+			"step": 1
+		},
+		{
+			"name": "Объем",
+			"fontfill": {
+				"color": "#000000",
+				"opacity": 0
+			},
+			"fontstroke": {
+				"color": "#000000",
+				"size": 10,
+				"gradient": {
+					"begin": {
+						"x": 0,
+						"y": 0
+					},
+					"end": {
+						"x": 0.4,
+						"y": -1
+					},
+					"colors": [
+						{
+							"color": "#004173",
+							"pos": 0
+						},
+						{
+							"color": "#1271a5",
+							"pos": 0.3
+						},
+						{
+							"color": "#178fcf",
+							"pos": 0.5
+						},
+						{
+							"color": "#44c5fc",
+							"pos": 0.6
+						}
+					]
+				}
+			},
+			"n": 45,
+			"move": 0,
+			"step": 1
+		},
+		{
+			"name": "Контур",
+			"fontfill": {
+				"color": "#000000",
+				"opacity": 0
+			},
+			"fontstroke": {
+				"color": "#000000",
+				"size": 55
+			},
+			"n": 45,
+			"move": 0,
+			"step": 1
+		}
+	],
+	"needUpdatePositions": true,
+	"layersDirection": {
+		"x": -0.5299192642332048,
+		"y": -0.8480480961564261
+	}
+}
