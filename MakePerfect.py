@@ -1,7 +1,7 @@
 from PIL import Image, ImageFilter, ImageDraw, ImageFont, ImageColor
 import os, random, io, requests, datetime
 from discord_webhook import DiscordWebhook
-import config as conf
+from .. import config as conf
 #
 drawModeRandom = True
 drawMode = 2
