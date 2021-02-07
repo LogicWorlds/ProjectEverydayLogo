@@ -41,11 +41,13 @@ def random_color(bottomBound, upperBound ):
 	return hex_number
 
 def generateIcon():
+	dir = os.path.dirname(__file__)
 	if (drawModeRandom):
 		drawMode = random.randint(1,2)
 		drawTextMode = random.randint(1,2)
 		
-	rand_imagebg = "props/bg/"+random.choice(os.listdir("props/bg/"))
+	rand_imagebg = dir+"/props/bg/"+random.choice(os.listdir(dir+"/props/bg/"))
+	print(rand_imagebg)
 
 	if drawMode == 2:
 		rand_imagebg = io.BytesIO(requests.get("https://source.unsplash.com/random").content)
@@ -66,12 +68,12 @@ def generateIcon():
 	img1 = cropped.filter(random_filter)
 	img1 = img1.filter(ImageFilter.GaussianBlur(radius=5))
 	if drawTextMode == 1:
-		rand_imagetext = "props/text/"+random.choice(os.listdir("props/text/"))
+		rand_imagetext = dir+"/props/text/"+random.choice(os.listdir(dir+"/props/text/"))
 		img2 = Image.open(rand_imagetext).convert('RGBA')
 		final1 = Image.alpha_composite(img1, img2)
 		
 	if drawTextMode == 2:
-		randFont = "fonts/"+random.choice(os.listdir("fonts/"))
+		randFont = dir+"/fonts/"+random.choice(os.listdir(dir+"/fonts/"))
 		print(randFont);
 		myFont = ImageFont.truetype(randFont, 250)
 		draw = ImageDraw.Draw(img1)
@@ -101,7 +103,7 @@ def generateIcon():
 		final1 = img1
 		print(t_color)
 
-	final1.save('out/out.png')
+	final1.save(dir+'/out/out.png')
 
 	if not sendToDiscord:
 		final1.show()
