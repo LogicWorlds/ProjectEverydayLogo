@@ -1,3 +1,10 @@
+props/bg/*
+!props/bg/1.png
+!props/bg/2.png
+!props/bg/3.png
+fonts/*
+!fonts/Bazar.ttf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
