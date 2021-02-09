@@ -6,15 +6,7 @@ import os, random, io, requests, datetime
 from discord_webhook import DiscordWebhook
 import config as conf
 #
-drawModeRandom = True
-drawMode = 2
-drawTextMode = 2
-
-lw = "LW"
 W, H = (512,512)
-
-sendToDiscord = True
-debug = False
 
 def calculate_brightness(image):
     greyscale_image = image.convert('L')
@@ -40,7 +32,7 @@ def random_color(bottomBound, upperBound ):
 			valid_hex = True;
 	return hex_number
 
-def generateIcon():
+def generateIcon(drawModeRandom = True, drawMode = 2, drawTextMode = 2, lw = "LW", sendToDiscord = True, debug = False):
 	dir = os.path.dirname(__file__)
 	if (drawModeRandom):
 		drawMode = random.randint(1,2)
