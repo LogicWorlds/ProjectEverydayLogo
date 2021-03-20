@@ -38,15 +38,23 @@ def generateIcon(drawModeRandom = True, drawMode = 2, drawTextMode = 2, lw = "LW
 		drawMode = random.randint(1,2)
 		drawTextMode = random.randint(1,2)
 		
-	rand_imagebg = dir+"/props/bg/"+random.choice(os.listdir(dir+"/props/bg/"))
-	print(rand_imagebg)
+	while 1:
+		rand_imagebg = dir+"/props/bg/"+random.choice(os.listdir(dir+"/props/bg/"))
+		print(rand_imagebg)
 
-	if drawMode == 2:
-		rand_imagebg = io.BytesIO(requests.get("https://source.unsplash.com/random").content)
+		if drawMode == 2:
+			rand_imagebg = io.BytesIO(requests.get("https://source.unsplash.com/random").content)
 
-	img1 = Image.open(rand_imagebg).convert('RGBA')
+		img1 = Image.open(rand_imagebg).convert('RGBA')
+		w, h = img1.size
+		if w >= 512 and h >= 512:
+			break
+	
+	rand_x = random.randint(0, w - 512)
+	rand_y = random.randint(0, h - 512)
 
-	cropped = img1.crop((0, 0, 512, 512))
+	#cropped = img1.crop((0, 0, 512, 512))
+	cropped = img1.crop((0, 0, rand_x, rand_y))
 
 	filters = [ImageFilter.GaussianBlur(radius=5), ImageFilter.BLUR,\
 				ImageFilter.CONTOUR, ImageFilter.DETAIL, ImageFilter.EDGE_ENHANCE,\
