@@ -54,7 +54,7 @@ def generateIcon(drawModeRandom = True, drawMode = 2, drawTextMode = 2, lw = "LW
 	rand_y = random.randint(0, h - 512)
 
 	#cropped = img1.crop((0, 0, 512, 512))
-	cropped = img1.crop((0, 0, rand_x, rand_y))
+	cropped = img1.crop((rand_x, rand_y, rand_x + 512, rand_y + 512))
 
 	filters = [ImageFilter.GaussianBlur(radius=5), ImageFilter.BLUR,\
 				ImageFilter.CONTOUR, ImageFilter.DETAIL, ImageFilter.EDGE_ENHANCE,\
