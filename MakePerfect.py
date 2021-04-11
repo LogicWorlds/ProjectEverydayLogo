@@ -93,10 +93,10 @@ def generateIcon(drawModeRandom = True, drawMode = 2, drawTextMode = 2, lw = "LW
 		bright_bg = calculate_brightness(img1);
 		print(bright_bg)
 		if bright_bg>0.8:
-			t_color = random_color(8388600, 16777215) #"#aaa"
+			t_color = random_color(10777215, 16777215) #"#aaa" 8388600
 			t_back_color = "#777"
 		else:
-			t_color = random_color(0, 8388600) #"white"
+			t_color = random_color(0, 4388600) #"white"
 			t_back_color = "#555"
 		draw.text(((W-w)/2+5,(H-h)/2+5), lw, fill=t_back_color, font=myFont)
 		draw.text(((W-w)/2,(H-h)/2), lw, fill=t_color, font=myFont)
