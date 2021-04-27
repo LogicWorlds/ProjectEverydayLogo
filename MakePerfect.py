@@ -39,8 +39,11 @@ def generateIcon(drawModeRandom = True, drawMode = 2, drawTextMode = 2, lw = "LW
 		drawTextMode = random.randint(1,2)
 		
 	while 1:
-		rand_imagebg = dir+"/props/bg/"+random.choice(os.listdir(dir+"/props/bg/"))
-		print(rand_imagebg)
+		if len(os.listdir(dir+"/props/bg/") ) == 0:
+			drawMode == 2
+		else:
+			rand_imagebg = dir+"/props/bg/"+random.choice(os.listdir(dir+"/props/bg/"))
+			print(rand_imagebg)
 
 		if drawMode == 2:
 			rand_imagebg = io.BytesIO(requests.get("https://source.unsplash.com/random").content)
