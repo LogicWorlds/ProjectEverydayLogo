@@ -70,9 +70,10 @@ def generateIcon(drawModeRandom=True, drawMode=2, drawTextMode=2, lw="LW", sendT
 
     filters = [ImageFilter.GaussianBlur(radius=5), ImageFilter.BLUR,
                ImageFilter.CONTOUR, ImageFilter.DETAIL, ImageFilter.EDGE_ENHANCE,
-               ImageFilter.EDGE_ENHANCE_MORE, ImageFilter.EMBOSS,
+               ImageFilter.EDGE_ENHANCE_MORE,
                ImageFilter.SHARPEN, ImageFilter.SMOOTH, ImageFilter.SMOOTH_MORE,
                ImageFilter.UnsharpMask(radius=2, percent=150, threshold=3),
+			   # Disable ImageFilter.EMBOSS by default
                ImageFilter.RankFilter(3, 0),
                ImageFilter.MedianFilter(size=3)]
     #img1 = cropped.filter(ImageFilter.GaussianBlur(radius=5))
